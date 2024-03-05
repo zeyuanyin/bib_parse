@@ -2,3 +2,4 @@ requests
 urllib3==1.26.6
 bibtexparser
 nltk
+numpy
