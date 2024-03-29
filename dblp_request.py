@@ -39,6 +39,11 @@ def search_dblp_by_title(title):
             venue = venue.split("/")[0]
         url = result["info"]["url"]
         bibtex = get_bibtex_text(url+".bib")
+
+        # if bibtex is None:
+        #     print(f"Failed to get bibtex. {title}")
+        #     return False, False
+
         if 'workshop' in bibtex.lower():
             venue = venue + 'W'
         elif 'findings' in bibtex.lower():
@@ -66,7 +71,7 @@ def search_dblp_by_title(title):
         else:
             venue_list = [venue]
             bibtex_list = [bibtex_list[idx]]
-    
+
 
     return venue_list, bibtex_list
 

@@ -7,7 +7,7 @@ The running speed depends on the network speed of accessing DBLP.
 ## Environments
 
 ```
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
 After installing the requirements, you should download the NLTK data by running the following script:
@@ -30,6 +30,14 @@ python dblp_request.py --query "Densely Connected Convolutional Networks"
 ```
 python format_bib.py --input_file "input.bib" --output_file "output.bib"
 ```
+
+python format_bib.py --input_file "input_short.bib" --output_file "output_short.bib"
+
+
+python format_bib.py --input_file "input.bib" --output_file "output.bib"
+
+
+python format_bib.py --input_file "input_ok.bib" --output_file "output_ok.bib"
 
 
 - A journal's .bib contains 7 info: "author", "title", "journal", "volume", "number", "pages", "year" (if any).
